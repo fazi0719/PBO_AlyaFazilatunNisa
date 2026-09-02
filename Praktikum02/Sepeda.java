@@ -4,21 +4,34 @@ public class Sepeda {
     float kecepatan; // Atribut 
     int gear;
 
-    // Method untuk menambah kecepatan
-    public void tambahKecepatan(int increment) {
-        kecepatan = kecepatan + increment;
+    public Sepeda() { 
     }
+    public Sepeda(float newKecepatan, int newGear) {
+        kecepatan = newKecepatan;
+        gear = newGear;
+    }
+    // Method untuk menambah kecepatan 
+    // nomor 9
+    public void tambahKecepatan(float increment) {
+    kecepatan += increment;
+    if (kecepatan > 20) {
+        kecepatan = 20;
+    }
+}
 
     // Method untuk mengurangi kecepatan
-    public void kurangiKecepatan(int decrement) {
-        kecepatan = kecepatan - decrement;
+    // nomor 8
+    public void kurangiKecepatan(float decrement) {
+    kecepatan -= decrement;
+    if (kecepatan < 0) {
+        kecepatan = 0;
     }
+}
 
     // Method untuk menampilkan informasi sepeda
     public void cetakInfo() {
         System.out.println("Kecepatan: " + kecepatan);
         System.out.println("Gear: " + gear);
-        source: System.out.println("==========================================");
+        System.out.println("==========================================");
     }
 }
-
