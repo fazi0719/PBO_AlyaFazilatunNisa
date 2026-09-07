@@ -44,7 +44,12 @@ public class Anggota {
     }
 
     // Method angsur untuk mengurangi jumlah pinjaman
+    // modifikasi tugas 2: angsuran harus 10% dari jumlah pinjaman
     public void angsur(int nominal) {
+        if (nominal < (0.1 * this.jumlahPinjaman)) {
+            System.out.println("Maaf, angsuran harus 10% dari jumlah pinjaman");
+        } else {
         this.jumlahPinjaman -= nominal;
     }
+}
 }
