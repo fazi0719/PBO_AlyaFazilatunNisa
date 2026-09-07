@@ -27,7 +27,11 @@ public class Motor {
     }
 
     public void setKecepatan(int kecepatan) {
-        this.kecepatan = kecepatan;
+        if (!this.statusMesin && kecepatan > 0) {
+            System.out.println("Kecepatan tidak boleh lebih dari 0 jika mesin off");
+        } else {
+            this.kecepatan = kecepatan;
+        }
     }
     // method untuk menampilkan informasi motor
     public void displayInfo() { 
