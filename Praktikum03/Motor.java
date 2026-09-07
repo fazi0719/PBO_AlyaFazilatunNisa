@@ -1,10 +1,10 @@
 package Praktikum03;
 
 public class Motor {
-    public String platNomor;
-    public boolean statusMesin;
-    public int kecepatan;
-
+    private String platNomor;
+    private boolean statusMesin;
+    private int kecepatan;
+ 
     // method untuk menampilkan informasi motor
     public void displayInfo() { 
         System.out.println("Plat Nomor: " + this.platNomor);
