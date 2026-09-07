@@ -27,9 +27,12 @@ public class Motor {
     }
 
  // modifikasi nomor 4: kecepatan maksimalnya adalah 100
+ // modifikasi nomor 5: tidak boleh negatif
     public void setKecepatan(int kecepatan) {
         if (!this.statusMesin && kecepatan > 0) {
             System.out.println("Kecepatan tidak boleh lebih dari 0 jika mesin off");
+        } else if (kecepatan < 0) {
+            System.out.println("Kecepatan tidak boleh bernilai negatif!");    
         } else if (kecepatan > 100) {
             System.out.println("Kecepatan maksimal adalah 100");
             this.kecepatan = 100;
