@@ -27,6 +27,13 @@ public class MotorDemo {
         motor4.setStatusMesin(true);
         motor4.setKecepatan(120); // Diisi nilai melebihi 100
         motor4.displayInfo();
+
+        // Pengujian Modifikasi No. 5: Kecepatan tidak boleh bernilai negatif
+        Motor motor5 = new Motor();
+        motor5.setPlatNomor("AG 5678 CD");
+        motor5.setStatusMesin(true);
+        motor5.setKecepatan(-20); // Diisi nilai minus
+        motor5.displayInfo();
     }
 }
 
