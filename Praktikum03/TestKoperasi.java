@@ -29,3 +29,8 @@ public class TestKoperasi {
         System.out.println("Jumlah pinjaman saat ini: " + anggota1.getJumlahPinjaman());
     }
 }
+
+// Anggota anggota1 = new Anggota("111333444", "Donny", 5000000); 
+// anggota: tipe/class  
+// anggota1 : nama variabel
+// new anggota : amerika membuat objek baru dari class Anggota

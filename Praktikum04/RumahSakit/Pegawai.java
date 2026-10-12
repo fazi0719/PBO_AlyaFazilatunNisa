@@ -1,5 +1,8 @@
 package Praktikum04.RumahSakit;
-
+// Enkapsulasi adalah penyatuan atribut dan method dari suatu objek menjadi satu kesatuan,
+// sekaligus membatasi akses langsung terhadap komponen objek.
+// private membatasi akses langsung terhadapa atribut dari luar class
+// Untuk mengaksesnya digunakan method seperti getter dan setter.
 public class Pegawai {
     private String nip;
     private String nama;

@@ -1,10 +1,15 @@
 package Praktikum04.RumahSakit;
-
+// untuk membungkus data/atribut dan method dalam sebuah class 
+// serta melindungi data dalam class agar tidak bisa diakses langsung dari luar.
 import java.time.LocalDate;
 
+// kenapa tipe data pegawai? krn pegawai sebuah clas,
+// sehingga object dari class Pegawai dapat digunakan sebagai tipe data untuk menyimpan dokter dan perawat.
+// hubungan antara class Konsultasi dengan class Pegawai adalah Konsultasi menggunakan object Pegawai 
+// untuk menyimpan data dokter dan perawat yang menangani konsultasi tersebut. ini alh relasi kelasnya
 public class Konsultasi {
-    private LocalDate tanggal;
-    private Pegawai dokter;
+    private LocalDate tanggal; // LocalDate digunakan untuk menyimpan tanggal terjadinya konsultasi.
+    private Pegawai dokter; // Karena dokter merupakan objek dari class Pegawai
     private Pegawai perawat;
 
     // implementasikan getter dan setter

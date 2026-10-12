@@ -1,5 +1,6 @@
 package Praktikum04.Tugas;
 
+// untuk membungkus data/atribut dan method dalam sebuah class serta membatasi akses langsung ke data tersebut.
 public class Kue {
     private String kodeKue;
     private String namaKue;

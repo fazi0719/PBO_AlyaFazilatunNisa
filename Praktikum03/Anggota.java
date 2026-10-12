@@ -1,20 +1,25 @@
 package Praktikum03;
 
+// Enkapsulasi adalah penyatuan atribut dan method dari suatu objek menjadi satu kesatuan,
+// sekaligus membatasi akses langsung terhadap komponen objek.
 public class Anggota {
-    private String nomorKTP;
+    private String nomorKTP; // enkapsulasi adalah dengan membuat atribut private, sehingga tidak bisa diakses langsung dari luar kelas
     private String nama;
     private int limitPinjaman;
     private int jumlahPinjaman;
+    // enkapsulasi bertujuan membatasi akses langsung terhadap komponen objek
 
-    // Constructor
-    public Anggota(String nomorKTP, String nama, int limitPinjaman) {
-        this.nomorKTP = nomorKTP;
+    // constructor digunakan utk membuat objek (contohnya di class testkoperasi)
+    public Anggota(String nomorKTP, String nama, int limitPinjaman) { // parameter
+        // memasukkan data ke atribut objek
+        this.nomorKTP = nomorKTP; // this.nomorktp atribut milik objek , nomorktp: parameter method
         this.nama = nama;
         this.limitPinjaman = limitPinjaman;
         this.jumlahPinjaman = 0;
     }
 
-    // Getter nomorKTP
+    // Untuk mengaksesnya dari luar kelas, kita buat getter untuk setiap atribut
+    // getter itu untuk menampilkan nilai dari atribut
     public String getNomorKTP() {
         return nomorKTP;
     }
@@ -30,6 +35,8 @@ public class Anggota {
     }
 
     // Getter jumlahPinjaman (Read-Only)
+    // getJumlahPinjaman tidak mempuai setter karena jumlah pinjaman tidak bisa diubah langsung dari luar kelas,
+    // hanya bisa diubah melalui method pinjam dan angsur
     public int getJumlahPinjaman() {
         return jumlahPinjaman;
     }
@@ -38,8 +45,8 @@ public class Anggota {
     public void pinjam(int nominal) {
         if (this.jumlahPinjaman + nominal > this.limitPinjaman) {
             System.out.println("Maaf, jumlah pinjaman melebihi limit.");
-        } else {
-            this.jumlahPinjaman += nominal;
+        } else { 
+            this.jumlahPinjaman += nominal; // bagian yg menambahkan nilai
         }
     }
 
@@ -53,3 +60,7 @@ public class Anggota {
     }
 }
 }
+// mana read only nya? Atribut nomorKTP, nama, limitPinjaman, dan jumlahPinjaman 
+// bersifat read-only dari luar class karena hanya memiliki getter dan tidak memiliki setter.
+// this.platNomor → atribut milik object
+// platNomor → parameter method

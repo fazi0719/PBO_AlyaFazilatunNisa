@@ -18,6 +18,19 @@ public class RumahSakitDemo {
         Pasien pasien2 = new Pasien("997744", "Yenny Anggraeni");
         System.out.println(pasien2.getInfo());
     }
-
-
 }
+// PASIEN1.SETNAMA("SINTA");
+//pasien1.hapusKonsultasiTerakhir();
+//System.out.println("Setelah dihapus:");
+//System.out.println(pasien1.getInfo());
+
+// mencari
+// if (pasien1.punyaRiwayatKonsultasi()) {
+//    System.out.println("Pasien memiliki riwayat konsultasi");
+// } else {
+//    System.out.println("Pasien belum memiliki riwayat konsultasi");
+// }
+
+// mengubha dokter 1 ke 2
+// pasien1.getRiwayatKonsultasi().get(0).setDokter(bagus);
+// System.out.println(pasien1.getInfo());

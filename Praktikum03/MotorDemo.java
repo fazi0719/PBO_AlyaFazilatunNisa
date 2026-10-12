@@ -37,6 +37,12 @@ public class MotorDemo {
     }
 }
 
+//  Motor motor1 = new Motor();
+// motor: class/ tipe
+// motor1 = nama variabel objek
+// new Motor(); membuat objek baru dari class Motor
 
+// Karena atribut platNomor bersifat private, maka tidak bisa diakses atau diubah langsung dari luar class.
+//  Untuk mengubah nilainya, digunakan setter setPlatNomor().
 
 
