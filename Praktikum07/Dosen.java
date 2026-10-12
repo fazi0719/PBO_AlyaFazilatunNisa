@@ -9,6 +9,7 @@ public class Dosen  extends Pegawai {
 
     // Constructor 2: Berparameter (Overloading)
     public Dosen(String nip, String nama, double gaji, String nidn) {
+        super(); // memanggil constructor class Pegawai
         super.nip = nip;
         super.nama = nama;
         super.gaji = gaji;
