@@ -5,9 +5,9 @@ public  class Pegawai {
     public String nama;
     public double gaji;
 
-    // public Pegawai() {
-    // System.out.println("Ini constructor class Pegawai");
-    // }
+     public Pegawai() {
+     System.out.println("Ini constructor class Pegawai");
+    }
 
     // Tambahkan constructor berparameter
     public Pegawai(String nip, String nama, double gaji) {
@@ -15,7 +15,7 @@ public  class Pegawai {
         this.nama = nama;
         this.gaji = gaji;
     }
-    
+
     public  String getInfo() {
         String info = "";
         info += "NIP   : " + nip + "\n";
