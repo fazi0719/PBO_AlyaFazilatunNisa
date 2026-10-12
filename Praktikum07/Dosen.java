@@ -9,8 +9,8 @@ public class Dosen  extends Pegawai {
 
     // Constructor 2: Berparameter (Overloading)
     public Dosen(String nip, String nama, double gaji, String nidn) {
-        this.nidn = nidn;
         super(nip, nama, gaji);
+        this.nidn = nidn;
     }
 
     public String getInfo() {
