@@ -6,6 +6,11 @@ public class Dosen  extends Pegawai {
     public Dosen() {
         System.out.println("Ini constructor class Dosen");
     }
+
+    // Constructor 2: Berparameter (Overloading)
+    public Dosen(String nip, String nama, double gaji, String nidn) {
+        System.out.println("Ini constructor class Dosen yang berparameter");
+    }
     
     public String getInfo() {
        return "NIDN  : " + this.nidn + "\n"; 
