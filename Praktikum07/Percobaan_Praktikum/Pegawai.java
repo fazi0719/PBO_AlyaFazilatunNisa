@@ -1,4 +1,4 @@
-package Praktikum07;
+package Praktikum07.Percobaan_Praktikum;
 
 public  class Pegawai {
     public String nip;
