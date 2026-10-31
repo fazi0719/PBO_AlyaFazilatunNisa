@@ -2,7 +2,7 @@ package Praktikum07.tugas;
 
 public class TugasDemo {
     public static void main(String[] args) {
-        // Instansiasi 2 objek subclass menggunakan constructor berparameter
+        
         Mobil mobil1 = new Mobil("Mercedes-Benz G-Class", "Hitam", 5800000000.0);
         Pesawat pesawat1 = new Pesawat("Airbus A330-900neo", "Putih", 1200000000000.0);
 

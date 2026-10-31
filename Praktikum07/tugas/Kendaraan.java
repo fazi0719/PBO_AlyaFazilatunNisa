@@ -5,18 +5,18 @@ public class Kendaraan {
     public String warna;
     public double harga;
 
-    // Constructor 1: Tanpa Parameter (Overloading)
+    
     public Kendaraan() {
     }
 
-    // Constructor 2: Berparameter (Overloading)
+    
     public Kendaraan(String merk, String warna, double harga) {
         this.merk = merk;
         this.warna = warna;
         this.harga = harga;
     }
 
-    // Method getInfo() di Superclass
+    
     public String getInfo() {
         String info = "";
         info += "Merk   : " + merk + "\n";
