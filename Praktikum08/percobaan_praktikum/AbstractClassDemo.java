@@ -1,4 +1,4 @@
-package Praktikum08;
+package Praktikum08.percobaan_praktikum;
 
 public class AbstractClassDemo {
     public static void main(String[] args) {
