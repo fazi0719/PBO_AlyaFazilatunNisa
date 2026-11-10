@@ -6,6 +6,9 @@ public class Demo {
         Pegawai pegawai1 = dosen1;
         System.out.println(pegawai1.nip);
         System.out.println(pegawai1.nama);
+        pegawai1.displayInfo();
+    
+        TenagaKependidikan test = (TenagaKependidikan) pegawai1;
 }
 }
 
