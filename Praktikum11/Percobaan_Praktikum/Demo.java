@@ -12,7 +12,10 @@ public class Demo {
         System.out.println("Memberikan pelatihan untuk pegawai");
         pegawai.displayInfo();
     
-       
+       // hanya test (akan error)
+        System.out.println(pegawai.nidn);
+        System.out.println(pegawai.kategori);
+        pegawai.mengajar();
 }
 }
 
