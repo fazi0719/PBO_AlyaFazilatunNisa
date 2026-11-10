@@ -1,4 +1,4 @@
-package Praktikum11.Percobaan_Praktikum;
+package Praktikum11.Percobaan_01;
 
 public class TenagaKependidikan extends Pegawai {
     public String kategori;

@@ -1,4 +1,4 @@
-package Praktikum11.Percobaan_Praktikum;
+package Praktikum11.Percobaan_01;
 
 public class Demo {
     public static void main(String[] args) {
