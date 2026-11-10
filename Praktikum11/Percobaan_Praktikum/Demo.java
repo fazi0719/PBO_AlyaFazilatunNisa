@@ -2,8 +2,18 @@ package Praktikum11.Percobaan_Praktikum;
 
 public class Demo {
     public static void main(String[] args) {
-  // Uji coba pembuktian Pertanyaan 2.6 Nomor 5
-        Pegawai p = new Pegawai("123", "Budi");
-        Dosen d = (Dosen) p; // Baris ini akan menyebabkan runtime error ClassCastException
+    Dosen dosen1 = new Dosen("19940201", "Widia, S.Kom. M.Kom", "199402");
+    TenagaKependidikan tendik1 = new TenagaKependidikan("19750301", "Aida, A.Md.", "Tenaga Administrasi");
+
+        train(dosen1);
+        train(tendik1);
     }
+    public static void train(Pegawai pegawai) {
+        pegawai.displayInfo();
+        System.out.println("Mengenalkan lingkungan kampus");
+        System.out.println("Menginfokan SOP/Juknis");
+        if (pegawai instanceof Dosen) {
+            System.out.println("Memberikan pelatihan pedagogik");
+        }
+}
 }
