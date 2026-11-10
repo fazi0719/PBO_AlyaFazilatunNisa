@@ -1,8 +1,6 @@
 package Praktikum11.percobaan_02;
 
 import java.util.ArrayList;
-
-import Praktikum11.Percobaan_01.Document;
 public class NewDemo {
     public static void main(String[] args) {
     Webpage webpage1 = new Webpage();

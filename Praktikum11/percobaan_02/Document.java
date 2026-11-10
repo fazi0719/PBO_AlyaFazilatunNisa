@@ -1,6 +1,4 @@
-package Praktikum11.Percobaan_01;
-
-import Praktikum11.percobaan_02.Printable;
+package Praktikum11.percobaan_02;
 
 public class Document implements Printable {
     public String fileName;
